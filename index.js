@@ -10,7 +10,6 @@ const lose = new Audio("sounds/lose-beep.mp3");
 $(".picture").click(function (){
 
   userChoice = $(this).attr("id");
-  console.log(userChoice);
   cpuSelect();
 
 });
@@ -46,7 +45,6 @@ function selectPicture(key) {
 function cpuSelect() {
 
   cpuChoice = Math.floor(Math.random() * 3) + 1;
-  console.log(cpuChoice);
 
   if (cpuChoice == 1) {
     $(".cpu").attr("src", "images/Rock.png");
