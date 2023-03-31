@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock, Paper, Scissors, Fun!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Rock, Paper, Scissors, Fun!</h1>
+        <h3>Choose wisely to outsmart your computer opponent!</h3>
+        <p>Instructions: Click the picture or enter the picture's number to make your choice.</p>
+        <p>Rock beats scissors. Scissors beats paper. Paper beats rock.</p>
+        <h2>Score</h2>
+        <h3 class="scoreboard wins">Wins: 0</h3>
+        <h3 class="scoreboard losses">Loss: 0</h3>
+        <h3 class="scoreboard ties">Ties: 0</h3>
+
+    </div>
+
+    <div class="game">
+        <div>
+            <h2 class="sign">Who will win?</h2>
+        </div>
+        <div class="container">
+            <div class="choices row">
+                <div class="col-lg-6 player">
+                    <button class="rock picture" id="1">1</button>
+                    <button class="paper picture" id="2">2</button>
+                    <button class="scissors picture" id="3">3</button>                
+                    <p>Select your choice</p>
+                </div>
+                <div class="col-lg-6 computer">
+                    <input type="image" class="cpu picture" src="images/cpu.png">
+                    <p>Computer's choice</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="footer">
+        <p class="text-center">Designed by Joe Masana, Jr.</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>

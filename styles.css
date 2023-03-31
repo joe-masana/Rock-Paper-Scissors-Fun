@@ -1,0 +1,79 @@
+body {
+    color: white;
+    background-color: #0E8388;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+h1 {
+    color: #2C3333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 2em;
+    margin: 0 0 10px;
+}
+
+button {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    padding: 5% 0;
+    text-align: center;
+}
+
+.scoreboard {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.game {
+    background-color: #CBE4DE;
+    color: #2C3333;
+    padding: 25px 50px 50px;
+}
+
+.rock {
+    background-image: url(images/Rock.png);
+}
+
+.paper {
+    background-image: url(images/Paper.png);
+}
+
+.scissors {
+    background-image: url(images/Scissors.png);
+}
+
+.row {
+    text-align: center;
+}
+
+.footer {
+    background-color: #0E8388;
+    padding: 4% 0;
+}
+
+.container {
+    margin-top: 3%;
+}
+
+.sign {
+    font-size: 3em;
+}
