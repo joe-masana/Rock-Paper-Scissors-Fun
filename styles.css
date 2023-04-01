@@ -77,3 +77,8 @@ p {
 .sign {
     font-size: 3em;
 }
+
+.selected {
+    border: .5rem solid;
+    border-color: white;
+}

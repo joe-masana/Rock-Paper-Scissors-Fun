@@ -10,8 +10,8 @@ const lose = new Audio("sounds/lose-beep.mp3");
 $(".picture").click(function (){
 
   userChoice = $(this).attr("id");
-  cpuSelect();
-
+  next();
+  
 });
 
 document.addEventListener("keydown", function(event) {
@@ -25,21 +25,27 @@ function selectPicture(key) {
   switch (key) {
       case "1":
           userChoice = 1;
-          cpuSelect();
+          next();
       break;
   
       case "2":
           userChoice = 2;
-          cpuSelect();
+          next();
       break;
       
       case "3":
           userChoice = 3;
-          cpuSelect();
+          next();
       break;
 
       default: console.log("Incorrect key press.")
   };
+}
+
+function next() {
+  $(".picture").removeClass("selected");
+  $('#' + userChoice).addClass("selected");
+  cpuSelect();
 }
 
 function cpuSelect() {
